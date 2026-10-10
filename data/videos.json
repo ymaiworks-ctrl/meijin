@@ -1,0 +1,84 @@
+{
+  "fetchedAt": "2026-10-10T02:24:44.748Z",
+  "channelId": "UC_R2MwYmlhFJpnr7dQvJSrA",
+  "videos": [
+    {
+      "id": "yXBJind1UvU",
+      "title": "発売日に事件が起きたゲーム【ドラクエ3｜第8話】",
+      "publishedAt": "2026-10-10T02:00:24Z",
+      "views": 879,
+      "ep": 8
+    },
+    {
+      "id": "udfL0gYb5J4",
+      "title": "倒すと採点してくる隠しボス【ドラクエ5｜第7話】",
+      "publishedAt": "2026-10-09T10:00:07Z",
+      "views": 1467,
+      "ep": 7
+    },
+    {
+      "id": "b8cok3_oEt4",
+      "title": "どれだけ攻撃しても絶対に倒せなくなるボス【ドラクエ5｜第6話】",
+      "publishedAt": "2026-10-09T06:00:06Z",
+      "views": 2445,
+      "ep": 6
+    },
+    {
+      "id": "8oIKl_wTUFs",
+      "title": "発売が何度も延期されたドラクエ5、中身は決まりを次々に破った【ドラクエ5｜第5話】",
+      "publishedAt": "2026-10-09T02:00:17Z",
+      "views": 1417,
+      "ep": 5
+    },
+    {
+      "id": "b0fBqTDq67I",
+      "title": "相棒の名前、実は自分で付けられない。候補は4つだけ【ドラクエ5｜第4話】",
+      "publishedAt": "2026-10-08T22:00:26Z",
+      "views": 21,
+      "ep": 4
+    },
+    {
+      "id": "BcaYCAxFvVo",
+      "title": "主人公はあやうく「トンヌラ」になるところだった【ドラクエ5｜第3話】",
+      "publishedAt": "2026-10-08T10:00:33Z",
+      "views": 1716,
+      "ep": 3
+    },
+    {
+      "id": "TTmdlHkHhDs",
+      "title": "256分の1。ドラクエ5でいちばん仲間になりにくいモンスター【ドラクエ5｜第2話】",
+      "publishedAt": "2026-10-08T04:00:29Z",
+      "views": 2426,
+      "ep": 2
+    },
+    {
+      "id": "bJfwsv-VMAg",
+      "title": "10年以上見つからなかった禁断の裏技「ひとしこのみ」【ドラクエ5｜第1話】",
+      "publishedAt": "2026-10-08T02:00:34Z",
+      "views": 2248,
+      "ep": 1
+    }
+  ],
+  "playlists": [
+    {
+      "id": "PLZvIWQNCP6wY",
+      "title": "ドラクエ1の小言",
+      "count": 1
+    },
+    {
+      "id": "PLHQDRvq4FOhI",
+      "title": "ドラクエ3の小言",
+      "count": 2
+    },
+    {
+      "id": "PLPSHvYQgcXVQ",
+      "title": "ドラクエ5の小言",
+      "count": 8
+    },
+    {
+      "id": "PLP4YG5jLZCgM",
+      "title": "名人の小言【全話・第1話から】",
+      "count": 11
+    }
+  ]
+}
