@@ -1,0 +1,29 @@
+{
+  "_note": "じさくゲーム＝YM AI Works が作っている Roblox のゲーム。url が空のものは「かいはつちゅう」表示。",
+  "games": [
+    {
+      "id": "nyan-quest",
+      "title": "にゃん語クエスト",
+      "state": "こうかいちゅう",
+      "genre": "王道アクションRPG",
+      "about": "ねこの言葉が分かる勇者の冒険。第1章まで遊べる。毛玉のペット、合言葉のコード、称号、ボスの扉。",
+      "url": "https://www.roblox.com/games/92506634648788"
+    },
+    {
+      "id": "last-cart-tower",
+      "title": "LAST CART TOWER: JAPAN",
+      "state": "かいはつちゅう",
+      "genre": "タワー攻略",
+      "about": "日本の大きなお店のタワーを、カートで上へ上へ。10階・商品49種・お掃除マシン。",
+      "url": ""
+    },
+    {
+      "id": "cat-coin",
+      "title": "Cat Coin Simulator",
+      "state": "かいはつちゅう",
+      "genre": "シミュレーター",
+      "about": "ねこと一緒にコインを集めて、どんどん大きくなるゲーム。",
+      "url": ""
+    }
+  ]
+}

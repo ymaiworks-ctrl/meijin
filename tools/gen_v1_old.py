@@ -1,3 +1,4 @@
+raise SystemExit("v1（黄色の1枚）の作り方。10/10 にレトロRPG版へ作り替えたので使わない。index.html を上書きしてしまう")
 # -*- coding: utf-8 -*-
 """懐かしゲーム名人の小言 公式ページ（1枚）を index.html に書き出す。
 

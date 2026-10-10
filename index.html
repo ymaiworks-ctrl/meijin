@@ -3,182 +3,122 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>懐かしゲーム名人の小言</title>
-<meta name="description" content="懐かしゲームの小ネタ・裏技・豆知識を、名人が40秒で小言するYouTubeショートのチャンネル。毎日11時・15時・19時・21時に1話ずつ。">
-<meta property="og:title" content="懐かしゲーム名人の小言">
-<meta property="og:description" content="懐かしゲームの小ネタ・裏技を、名人が40秒で。毎日4話。">
-<meta property="og:image" content="assets/ogp.jpg">
+<title>懐かしゲーム名人の小言｜レトロゲームの小ネタ・裏技を40秒で</title>
+<meta name="description" content="懐かしゲームの小ネタ・裏技・豆知識を、名人が40秒で小言するYouTubeショートのチャンネル。毎日11時・15時・19時・21時に1話ずつ。レビュー・おすすめの道具・自作ゲームも。">
+<link rel="canonical" href="https://ymaiworks-ctrl.github.io/meijin/">
 <meta property="og:type" content="website">
-<link rel="icon" href="assets/meijin.png">
+<meta property="og:site_name" content="懐かしゲーム名人の小言">
+<meta property="og:title" content="懐かしゲーム名人の小言">
+<meta property="og:description" content="あの頃のゲームの小ネタ・裏技を、名人が40秒で。毎日4話。">
+<meta property="og:url" content="https://ymaiworks-ctrl.github.io/meijin/">
+<meta property="og:image" content="https://ymaiworks-ctrl.github.io/meijin/assets/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/meijin_dot.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b1033">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=M+PLUS+1p:wght@500;800&display=swap" rel="stylesheet">
-<style>
-:root{--y:#ffe600;--k:#111;--r:#e8192c;--g:#666;--bg:#fffdf3;--line:#eee}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--k);font-family:"M PLUS 1p",system-ui,sans-serif;line-height:1.7;-webkit-text-size-adjust:100%}
-a{color:inherit}
-.wrap{max-width:960px;margin:0 auto;padding:0 16px}
-.pop{font-family:"Mochiy Pop One",sans-serif;font-weight:400;letter-spacing:.01em}
-.pr{background:var(--k);color:#fff;font-size:12px;text-align:center;padding:6px 16px}
-header.hero{background:var(--y);border-bottom:6px solid var(--k)}
-.hero .wrap{display:flex;gap:28px;align-items:center;padding-top:40px;padding-bottom:40px}
-.face{width:180px;height:180px;flex:0 0 auto;border-radius:50%;border:6px solid var(--k);background:#fff;overflow:hidden;box-shadow:6px 6px 0 var(--k)}
-.face img{width:100%;height:100%;object-fit:cover}
-h1{font-size:clamp(30px,6vw,52px);line-height:1.2}
-h1 .mk{background:linear-gradient(transparent 58%,#fff 58%);padding:0 6px}
-.lead{font-weight:800;margin-top:10px;font-size:18px}
-.times{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.times span{background:var(--k);color:var(--y);font-weight:800;border-radius:999px;padding:2px 14px;font-size:15px}
-.cta{display:inline-block;margin-top:18px;background:var(--r);color:#fff;text-decoration:none;font-weight:800;font-size:18px;padding:12px 26px;border-radius:12px;border:3px solid var(--k);box-shadow:4px 4px 0 var(--k)}
-.cta:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--k)}
-section{padding:44px 0;border-bottom:1px solid var(--line)}
-h2{font-size:clamp(24px,4.5vw,32px);margin-bottom:6px}
-h2 small{display:block;font-family:"M PLUS 1p",sans-serif;font-size:14px;color:var(--g);font-weight:500}
-.player{position:relative;width:100%;max-width:360px;aspect-ratio:9/16;margin:18px auto 0;border:4px solid var(--k);border-radius:16px;overflow:hidden;background:#000;box-shadow:6px 6px 0 var(--y)}
-.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.pls{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
-.pl{text-decoration:none;font-weight:800;border:3px solid var(--k);background:#fff;border-radius:999px;padding:6px 16px}
-.pl small{margin-left:6px;color:var(--g);font-weight:500}
-.eps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
-.ep{position:relative;display:block;text-decoration:none;border-radius:12px;overflow:hidden;border:3px solid var(--k);background:#000}
-.ep img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover}
-.ep-no{position:absolute;top:8px;left:8px;background:var(--y);font-weight:800;font-size:13px;padding:0 8px;border-radius:6px}
-.ep-t{position:absolute;left:0;right:0;bottom:0;padding:22px 8px 8px;color:#fff;font-weight:800;font-size:13px;line-height:1.4;background:linear-gradient(transparent,rgba(0,0,0,.85))}
-.note{font-size:13px;color:var(--g);margin-top:10px}
-.shelf{font-family:"Mochiy Pop One",sans-serif;font-size:20px;margin:26px 0 10px;padding-left:10px;border-left:8px solid var(--y)}
-.items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.item{display:flex;flex-direction:column;text-decoration:none;background:#fff;border:2px solid var(--k);border-radius:12px;padding:10px}
-.item img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff}
-.item-n{font-weight:800;font-size:13px;line-height:1.45;margin-top:8px;flex:1}
-.item-p{font-weight:800;color:var(--r);margin-top:6px}
-.item-p small{display:block;color:var(--g);font-weight:500;font-size:11px}
-.collab{background:var(--k);color:#fff;border-radius:18px;padding:26px;margin-top:16px}
-.collab ul{margin:12px 0 0 1.2em}
-.collab .cta{border-color:#fff;box-shadow:4px 4px 0 var(--y)}
-footer{padding:30px 0 50px;font-size:12px;color:var(--g)}
-footer p+p{margin-top:6px}
-@media (max-width:720px){
-  .hero .wrap{flex-direction:column;text-align:center;gap:18px}
-  .times{justify-content:center}
-  .face{width:140px;height:140px}
-  .eps{grid-template-columns:repeat(2,1fr)}
-  .items{grid-template-columns:repeat(2,1fr)}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/rpg.css">
 </head>
 <body>
-<div class="pr">当ページはアフィリエイト広告（楽天アフィリエイト）を利用しています</div>
-<header class="hero"><div class="wrap">
-  <div class="face"><img src="assets/meijin.png" alt="名人"></div>
-  <div>
-    <h1 class="pop">懐かしゲーム<br><span class="mk">名人の小言</span></h1>
-    <p class="lead">あの頃のゲームの小ネタ・裏技・豆知識を、名人が40秒で小言します。</p>
-    <div class="times"><span>毎日 11時</span><span>15時</span><span>19時</span><span>21時</span></div>
-    <a class="cta" href="https://www.youtube.com/@meijin_kogoto?sub_confirmation=1" target="_blank" rel="noopener">YouTubeで名人を登録する</a>
-  </div>
+<div class="pr">当サイトはアフィリエイト広告（楽天アフィリエイト等）を利用しています</div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><img class="dot" src="assets/meijin_dot.png" alt="" width="56" height="56"><b>懐かしゲーム名人の小言<small>レトロゲームの小ネタ・裏技を40秒で</small></b></a>
 </div></header>
 
-<main>
-<section><div class="wrap">
-  <h2 class="pop">第1話から見る<small>いま第8話まで公開中。続けて見ると、だんだん名人になれます</small></h2>
-  <div class="player"><iframe src="https://www.youtube.com/embed/videoseries?list=PLP4YG5jLZCgM" title="名人の小言 全話" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-  <div class="pls"><a class="pl" href="https://www.youtube.com/playlist?list=PLZvIWQNCP6wY" target="_blank" rel="noopener">ドラクエ1の小言<small>1話</small></a><a class="pl" href="https://www.youtube.com/playlist?list=PLHQDRvq4FOhI" target="_blank" rel="noopener">ドラクエ3の小言<small>2話</small></a><a class="pl" href="https://www.youtube.com/playlist?list=PLPSHvYQgcXVQ" target="_blank" rel="noopener">ドラクエ5の小言<small>8話</small></a></div>
-</div></section>
-
-<section><div class="wrap">
-  <h2 class="pop">最新の小言<small>新しい順</small></h2>
-  <div class="eps"><a class="ep" href="https://www.youtube.com/shorts/yXBJind1UvU" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/yXBJind1UvU/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第8話</span>
-  <span class="ep-t">発売日に事件が起きたゲーム</span>
-</a><a class="ep" href="https://www.youtube.com/shorts/udfL0gYb5J4" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/udfL0gYb5J4/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第7話</span>
-  <span class="ep-t">倒すと採点してくる隠しボス</span>
-</a><a class="ep" href="https://www.youtube.com/shorts/b8cok3_oEt4" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/b8cok3_oEt4/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第6話</span>
-  <span class="ep-t">どれだけ攻撃しても絶対に倒せなくなるボス</span>
-</a><a class="ep" href="https://www.youtube.com/shorts/8oIKl_wTUFs" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/8oIKl_wTUFs/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第5話</span>
-  <span class="ep-t">発売が何度も延期されたドラクエ5、中身は決まりを次々に破った</span>
-</a><a class="ep" href="https://www.youtube.com/shorts/b0fBqTDq67I" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/b0fBqTDq67I/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第4話</span>
-  <span class="ep-t">相棒の名前、実は自分で付けられない。候補は4つだけ</span>
-</a><a class="ep" href="https://www.youtube.com/shorts/BcaYCAxFvVo" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/BcaYCAxFvVo/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第3話</span>
-  <span class="ep-t">主人公はあやうく「トンヌラ」になるところだった</span>
-</a><a class="ep" href="https://www.youtube.com/shorts/TTmdlHkHhDs" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/TTmdlHkHhDs/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第2話</span>
-  <span class="ep-t">256分の1。ドラクエ5でいちばん仲間になりにくいモンスター</span>
-</a><a class="ep" href="https://www.youtube.com/shorts/bJfwsv-VMAg" target="_blank" rel="noopener">
-  <img src="https://i.ytimg.com/vi/bJfwsv-VMAg/hqdefault.jpg" alt="" loading="lazy" width="216" height="384">
-  <span class="ep-no">第1話</span>
-  <span class="ep-t">10年以上見つからなかった禁断の裏技「ひとしこのみ」</span>
-</a></div>
-</div></section>
-
-<section><div class="wrap">
-  <h2 class="pop">名人の本棚<small>小言に出てきたゲームを、いま遊ぶなら</small></h2>
-  <h3 class="shelf">いま遊べるドラクエ</h3><div class="items"><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhousing-reformfair%2Fb0f9pq43y5%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Fhousing-reformfair%2Fb0f9pq43y5%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/housing-reformfair/cabinet/rakus169_0015/b0f9pq43y500.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n">ドラゴンクエストI＆II - Switch</span>
-  <span class="item-p">8,066円<small>（雑貨 スタイルハウジング）</small></span>
-</a><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4988601011822-54-40561-n%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4988601011822-54-40561-n%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0376/4988601011822.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n">スクウェア・エニックス 【Switch】ドラゴンクエストIII　そして伝説へ… [HAC-P-B…</span>
-  <span class="item-p">6,910円<small>（Joshin web 家電とPCの大型専門店）</small></span>
-</a><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbookoffonline%2F0015899836%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Fbookoffonline%2F0015899836%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/bookoffonline/cabinet/260/0015899836l.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n"> ドラゴンクエストV　天空の花嫁／ニンテンドーDS</span>
-  <span class="item-p">4,356円<small>（ブックオフ 楽天市場店）</small></span>
-</a></div><h3 class="shelf">名人の書庫</h3><div class="items"><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenet3%2F0010711199%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Frenet3%2F0010711199%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/renet3/cabinet/zisya29/0010711199.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n">ドラゴンクエストV天空の花嫁公式ガイドブック / スタジオベントスタッフ (単行本)</span>
-  <span class="item-p">560円<small>（ネットオフ楽天市場支店）</small></span>
-</a><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18019795%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F18019795%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5392/9784757595392_1_5.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n">ドラゴンクエストIII　そして伝説へ…　公式ガイドブック【HD-2D版】 （SE-MOOK） […</span>
-  <span class="item-p">2,420円<small>（楽天ブックス）</small></span>
-</a><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F6075937%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F6075937%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2361/4988003372361.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n">交響組曲「ドラゴンクエスト」ベスト・セレクション～ロト編～ [ すぎやまこういち ]</span>
-  <span class="item-p">1,923円<small>（楽天ブックス）</small></span>
-</a></div><h3 class="shelf">名人の部屋</h3><div class="items"><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftenten-store%2Fdq-ss-tc-m%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Ftenten-store%2Fdq-ss-tc-m%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/tenten-store/cabinet/img32/13131929/dq-mmk-thscv.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n">ドラゴンクエスト ぬいぐるみ ティッシュカバー ミミック 【即納品】 ドラクエ グッズ スマイル…</span>
-  <span class="item-p">3,960円<small>（天天ストア 楽天市場店）</small></span>
-</a><a class="item" href="https://hb.afl.rakuten.co.jp/hgc/5860a704.5a883b3e.5860a705.cb1e5812/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffjoonline%2Fcompass1735303427%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99&amp;m=https%3A%2F%2Fitem.rakuten.co.jp%2Ffjoonline%2Fcompass1735303427%2F%3Frafcid%3Dwsc_i_is_4bfde91b-b510-4b77-93ad-c0c3237bae99" target="_blank" rel="sponsored noopener">
-  <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/fjoonline/cabinet/compass1735303347.jpg?_ex=300x300" alt="" loading="lazy" width="150" height="150">
-  <span class="item-n">ドラゴンクエスト メタリックモンスターズギャラリー メタル系レアモンスター × 3種セット メタ…</span>
-  <span class="item-p">15,480円<small>（FJOオンライン）</small></span>
-</a></div>
-  <p class="note">価格・在庫は2026年10月10日時点のものです。最新の情報は各ショップでご確認ください。リンク先は楽天市場です。</p>
-</div></section>
-
-<section><div class="wrap">
-  <h2 class="pop">お仕事・コラボのご相談</h2>
-  <div class="collab">
-    <p>ゲーム・グッズ・レトロゲームショップ・書籍などのご紹介を承ります。</p>
-    <ul>
-      <li>名人の小言の形（40秒ショート）での紹介</li>
-      <li>レトロゲームやシリーズの小ネタを使ったコラボ企画</li>
-      <li>攻略本・サントラ・グッズのレビュー</li>
-    </ul>
-    <p style="margin-top:12px">毎日4話・第8話まで公開中。ドラクエ1・3・5から、FF・ロマサガ・ドラゴンボールなどへ広げていきます。</p>
-    <a class="cta" href="mailto:ymaiworks@gmail.com?subject=%E3%80%90%E5%90%8D%E4%BA%BA%E3%81%AE%E5%B0%8F%E8%A8%80%E3%80%91%E3%81%8A%E4%BB%95%E4%BA%8B%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">メールで相談する</a>
+<main class="wrap">
+  <!-- 名人のセリフ（1文字ずつ・タップで次へ） -->
+  <div class="win msg" id="msg" tabindex="0" role="button" aria-label="名人のセリフ。タップで次へ">
+    <span class="who">名人</span>
+    <p class="text" aria-live="polite">よくきたな。わしが ゲーム名人じゃ。</p>
+    <span class="next" aria-hidden="true"></span>
   </div>
-</div></section>
+
+  <div class="duo">
+    <!-- コマンド -->
+    <nav class="win cmd" id="cmd" aria-label="メニュー">
+      <span class="win-title">コマンド</span>
+      <ul>
+        <li><a href="#latest">どうがを みる<small>最新の小言・第1話から</small></a></li>
+        <li><a href="review.html">こごと<small>辛口レビュー＆ランキング</small></a></li>
+        <li><a href="soubi.html">そうび<small>名人のおすすめの道具</small></a></li>
+        <li><a href="games.html">じさくゲーム<small>開発中のRobloxゲーム</small></a></li>
+        <li><a href="contact.html">おといあわせ<small>企業のかたへ・媒体資料</small></a></li>
+      </ul>
+    </nav>
+
+    <!-- ステータス -->
+    <section class="win" aria-label="名人のステータス">
+      <span class="win-title">ステータス</span>
+      <div class="stat">
+        <img class="dot" src="assets/meijin_dot.png" alt="名人" width="96" height="96">
+        <dl id="status">
+          <dt>なまえ</dt><dd>名人</dd>
+          <dt>レベル</dt><dd>40</dd>
+          <dt>しょくぎょう</dt><dd>ゲーム名人</dd>
+        </dl>
+        <p class="intro" id="intro"></p>
+      </div>
+    </section>
+  </div>
+
+  <!-- 最新の小言 -->
+  <section class="win" id="latest" aria-label="最新の小言">
+    <span class="win-title">さいしんの こごと</span>
+    <div class="latest">
+      <div class="player" id="player"></div>
+      <div>
+        <ul class="eplist" id="eplist"><li>よみこみちゅう…</li></ul>
+        <a class="btn" id="allplay" href="https://www.youtube.com/@meijin_kogoto/shorts" target="_blank" rel="noopener">▶ 第1話から みる</a>
+        <a class="btn gold" id="sub" href="https://www.youtube.com/@meijin_kogoto?sub_confirmation=1" target="_blank" rel="noopener">名人を とうろくする</a>
+        <p style="margin-top:12px;color:var(--dim);font-size:14px">毎日 <span id="sched">11時・15時・19時・21時</span> に1話ずつ</p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer><div class="wrap">
   <p>運営：YM AI Works（雅 -miyabi-）</p>
-  <p>当ページはアフィリエイト広告（楽天アフィリエイト）を利用しています。商品の購入により運営者に報酬が支払われることがあります。</p>
-  <p>「ドラゴンクエスト」は株式会社スクウェア・エニックスの登録商標です。当チャンネル・当ページは非公式のファン作品で、各権利者とは関係ありません。イラストはすべて当チャンネルのオリジナルです。</p>
+  <p>当サイトはアフィリエイト広告を利用しています。商品の購入により運営者に報酬が支払われることがあります。</p>
+  <p>紹介するゲームの名称・商標は各権利者のものです。当サイト・当チャンネルは非公式で、各権利者とは関係ありません。サイトのデザインとイラストはすべてオリジナルです。</p>
 </div></footer>
+
+<script src="assets/js/rpg.js"></script>
+<script>
+(async () => {
+  const site = await RPG.json("data/site.json");
+  RPG.typewriter(document.getElementById("msg"), site.messages);
+  RPG.commandMenu(document.getElementById("cmd"));
+
+  const s = site.status;
+  document.getElementById("status").innerHTML = [
+    ["なまえ", RPG.esc(s.name)], ["レベル", s.level], ["しょくぎょう", RPG.esc(s.job)],
+    ["HP", RPG.esc(s.hp) + '<span class="bar" aria-hidden="true"></span>'], ["MP", RPG.esc(s.mp)],
+    ["とくぎ", s.skills.map(RPG.esc).join("・")], ["そうび", s.equip.map(RPG.esc).join("・")],
+  ].map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+  document.getElementById("intro").textContent = site.intro;
+  document.getElementById("sched").textContent = site.schedule.join("・");
+
+  try {
+    const v = await RPG.json("data/videos.json");
+    const eps = v.videos;
+    const all = v.playlists.find((p) => p.title.includes("全話"));
+    if (all) document.getElementById("allplay").href = "https://www.youtube.com/playlist?list=" + all.id;
+    if (eps.length) {
+      const id = eps[0].id;
+      document.getElementById("player").innerHTML =
+        `<iframe src="https://www.youtube.com/embed/${RPG.esc(id)}" title="${RPG.esc(eps[0].title)}" loading="lazy"
+           referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    }
+    document.getElementById("eplist").innerHTML = eps.slice(0, 6).map((e) =>
+      `<li><a href="https://www.youtube.com/shorts/${RPG.esc(e.id)}" target="_blank" rel="noopener"><span>第${e.ep}話</span>${RPG.esc(e.title.split("【")[0])}</a></li>`).join("");
+  } catch (e) {
+    document.getElementById("eplist").innerHTML = '<li>どうがの よみこみに しっぱいした。</li>';
+  }
+})();
+</script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
 </body>
 </html>

@@ -1,33 +1,53 @@
 {
-  "fetchedAt": "2026-10-10T02:24:44.748Z",
+  "fetchedAt": "2026-10-10T11:10:28.783Z",
   "channelId": "UC_R2MwYmlhFJpnr7dQvJSrA",
+  "stats": {
+    "subscribers": 8,
+    "views": 5675,
+    "episodes": 10,
+    "totalShortViews": 16030
+  },
   "videos": [
+    {
+      "id": "ArF-_IbkesI",
+      "title": "スーファミ版に無かったもの、知ってる？【ドラクエ5｜第10話】",
+      "publishedAt": "2026-10-10T10:00:29Z",
+      "views": 261,
+      "ep": 10
+    },
+    {
+      "id": "mOcGTad0b_Q",
+      "title": "守りながら攻撃できる禁断のコマンド【ドラクエ3｜第9話】",
+      "publishedAt": "2026-10-10T06:00:36Z",
+      "views": 838,
+      "ep": 9
+    },
     {
       "id": "yXBJind1UvU",
       "title": "発売日に事件が起きたゲーム【ドラクエ3｜第8話】",
       "publishedAt": "2026-10-10T02:00:24Z",
-      "views": 879,
+      "views": 1208,
       "ep": 8
     },
     {
       "id": "udfL0gYb5J4",
       "title": "倒すと採点してくる隠しボス【ドラクエ5｜第7話】",
       "publishedAt": "2026-10-09T10:00:07Z",
-      "views": 1467,
+      "views": 1761,
       "ep": 7
     },
     {
       "id": "b8cok3_oEt4",
       "title": "どれだけ攻撃しても絶対に倒せなくなるボス【ドラクエ5｜第6話】",
       "publishedAt": "2026-10-09T06:00:06Z",
-      "views": 2445,
+      "views": 3665,
       "ep": 6
     },
     {
       "id": "8oIKl_wTUFs",
       "title": "発売が何度も延期されたドラクエ5、中身は決まりを次々に破った【ドラクエ5｜第5話】",
       "publishedAt": "2026-10-09T02:00:17Z",
-      "views": 1417,
+      "views": 1575,
       "ep": 5
     },
     {
@@ -41,21 +61,21 @@
       "id": "BcaYCAxFvVo",
       "title": "主人公はあやうく「トンヌラ」になるところだった【ドラクエ5｜第3話】",
       "publishedAt": "2026-10-08T10:00:33Z",
-      "views": 1716,
+      "views": 1781,
       "ep": 3
     },
     {
       "id": "TTmdlHkHhDs",
       "title": "256分の1。ドラクエ5でいちばん仲間になりにくいモンスター【ドラクエ5｜第2話】",
       "publishedAt": "2026-10-08T04:00:29Z",
-      "views": 2426,
+      "views": 2598,
       "ep": 2
     },
     {
       "id": "bJfwsv-VMAg",
       "title": "10年以上見つからなかった禁断の裏技「ひとしこのみ」【ドラクエ5｜第1話】",
       "publishedAt": "2026-10-08T02:00:34Z",
-      "views": 2248,
+      "views": 2322,
       "ep": 1
     }
   ],
@@ -63,22 +83,22 @@
     {
       "id": "PLZvIWQNCP6wY",
       "title": "ドラクエ1の小言",
-      "count": 1
+      "count": 4
     },
     {
       "id": "PLHQDRvq4FOhI",
       "title": "ドラクエ3の小言",
-      "count": 2
+      "count": 6
     },
     {
       "id": "PLPSHvYQgcXVQ",
       "title": "ドラクエ5の小言",
-      "count": 8
+      "count": 9
     },
     {
       "id": "PLP4YG5jLZCgM",
       "title": "名人の小言【全話・第1話から】",
-      "count": 11
+      "count": 19
     }
   ]
 }

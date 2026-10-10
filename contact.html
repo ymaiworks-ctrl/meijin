@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>おといあわせ（企業のかたへ）｜懐かしゲーム名人の小言</title>
+<meta name="description" content="企業案件・コラボのご相談。媒体資料つき。">
+<link rel="canonical" href="https://ymaiworks-ctrl.github.io/meijin/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="懐かしゲーム名人の小言">
+<meta property="og:title" content="おといあわせ（企業のかたへ）｜懐かしゲーム名人の小言">
+<meta property="og:description" content="あの頃のゲームの小ネタ・裏技を、名人が40秒で。毎日4話。">
+<meta property="og:url" content="https://ymaiworks-ctrl.github.io/meijin/contact.html">
+<meta property="og:image" content="https://ymaiworks-ctrl.github.io/meijin/assets/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/meijin_dot.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b1033">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/rpg.css">
+</head>
+<body>
+<div class="pr">当サイトはアフィリエイト広告（楽天アフィリエイト等）を利用しています</div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><img class="dot" src="assets/meijin_dot.png" alt="" width="56" height="56"><b>懐かしゲーム名人の小言<small>レトロゲームの小ネタ・裏技を40秒で</small></b></a>
+</div></header>
+
+<main class="wrap">
+  <div class="win msg" id="msg" tabindex="0" role="button"><span class="who">名人</span><p class="text" aria-live="polite">企業の かたへ。お仕事の ごそうだんを うけたまわる。</p><span class="next" aria-hidden="true"></span></div>
+
+  <section class="win"><span class="win-title">ばいたい しりょう</span>
+    <div class="kpi" id="kpi"></div>
+    <p class="note" id="asof"></p>
+    <ul style="margin:12px 0 0 1.2em;font-size:15px">
+      <li>形式：YouTubeショート（40秒前後）・毎日4話（11時・15時・19時・21時）</li>
+      <li>内容：レトロゲームの小ネタ・裏技・豆知識（ドラクエ1・3・5から、FF・ロマサガ・ドラゴンボールなどへ拡大予定）</li>
+      <li>見た目：オリジナルのイラスト＋ナレーション。ゲーム画面は使っていません</li>
+    </ul>
+  </section>
+
+  <section class="win"><span class="win-title">うけたまわれること</span>
+    <ul style="margin-left:1.2em;font-size:15px">
+      <li>名人の小言の形（40秒ショート）でのご紹介</li>
+      <li>レトロゲーム・復刻版・グッズ・書籍のレビュー</li>
+      <li>シリーズの小ネタを使ったコラボ企画</li>
+    </ul>
+    <p class="note">広告・PRの回は、動画と説明欄に「PR」と明記します。</p>
+  </section>
+
+  <section class="win" id="formbox"><span class="win-title">おといあわせ</span><div id="form"></div></section>
+
+  <nav class="win cmd" id="cmd"><span class="win-title">コマンド</span><ul>
+    <li><a href="./">もどる<small>トップへ</small></a></li>
+  </ul></nav>
+</main>
+
+<footer><div class="wrap">
+  <p>運営：YM AI Works（雅 -miyabi-）</p>
+  <p>当サイトはアフィリエイト広告を利用しています。リンク先で商品を購入すると、運営者に報酬が支払われることがあります。</p>
+  <p>ゲーム・商品の名称は各権利者のものです。当サイトは非公式で、各権利者とは関係ありません。</p>
+</div></footer>
+
+<script src="assets/js/rpg.js"></script>
+<script>
+(async () => {
+  RPG.typewriter(document.getElementById("msg"), ["企業の かたへ。お仕事の ごそうだんを うけたまわる。", "まずは したの フォームか メールで、かるく 声をかけてくれ。"]);
+  RPG.commandMenu(document.getElementById("cmd"));
+  const site = await RPG.json("data/site.json");
+  const v = await RPG.json("data/videos.json").catch(() => null);
+  if (v?.stats) {
+    const n = (x) => Number(x).toLocaleString("ja-JP");
+    document.getElementById("kpi").innerHTML = [
+      [n(v.stats.subscribers) + "人", "チャンネル登録者"], [n(v.stats.views) + "回", "チャンネル総再生"],
+      [n(v.stats.episodes) + "話", "公開中のエピソード"], ["4話/日", "投稿ペース"],
+    ].map(([b, s]) => `<div><b>${b}</b><span>${s}</span></div>`).join("");
+    const d = new Date(v.fetchedAt);
+    document.getElementById("asof").textContent = `数字は ${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日 時点。開設は2026年10月8日です。`;
+  }
+  const box = document.getElementById("form");
+  if (site.formEmbedUrl) {
+    box.innerHTML = `<iframe class="form-frame" src="${RPG.esc(site.formEmbedUrl)}" title="お問い合わせフォーム" loading="lazy"></iframe>`;
+  } else {
+    const subject = encodeURIComponent("【名人の小言】お仕事のご相談");
+    const body = encodeURIComponent(["会社名：", "ご担当者：", "ご相談の内容：", "ご予算・時期（分かれば）：", ""].join(String.fromCharCode(10)));
+    box.innerHTML = `<p>フォームは じゅんびちゅう。いまは メールで うけつけておる。</p>
+      <a class="btn gold" href="mailto:${RPG.esc(site.contactEmail)}?subject=${subject}&body=${body}">▶ メールで そうだんする</a>
+      <p class="note">${RPG.esc(site.contactEmail)}</p>`;
+  }
+})();
+</script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
+</body>
+</html>

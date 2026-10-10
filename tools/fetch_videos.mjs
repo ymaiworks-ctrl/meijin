@@ -15,5 +15,8 @@ const videos = v.items.filter((x) => x.status.privacyStatus === "public" && /第
   .sort((a, b) => b.ep - a.ep);
 const lists = await fetch(`${API}/playlists?part=snippet,contentDetails&mine=true&maxResults=20`, { headers: H }).then((r) => r.json());
 const playlists = lists.items.map((p) => ({ id: p.id, title: p.snippet.title, count: p.contentDetails.itemCount }));
-writeFileSync("data/videos.json", JSON.stringify({ fetchedAt: new Date().toISOString(), channelId: ch.items[0].id, videos, playlists }, null, 2));
+const st = ch.items[0].statistics ?? {};
+const stats = { subscribers: Number(st.subscriberCount ?? 0), views: Number(st.viewCount ?? 0),
+  episodes: videos.length, totalShortViews: videos.reduce((a, x) => a + x.views, 0) };
+writeFileSync("data/videos.json", JSON.stringify({ fetchedAt: new Date().toISOString(), channelId: ch.items[0].id, stats, videos, playlists }, null, 2));
 console.log("公開済み", videos.length, "本 / 再生リスト", playlists.length);

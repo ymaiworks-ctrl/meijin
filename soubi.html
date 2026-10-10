@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>そうび（名人のおすすめの道具）｜懐かしゲーム名人の小言</title>
+<meta name="description" content="レトロゲームを遊ぶための、名人のおすすめの道具。">
+<link rel="canonical" href="https://ymaiworks-ctrl.github.io/meijin/soubi.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="懐かしゲーム名人の小言">
+<meta property="og:title" content="そうび（名人のおすすめの道具）｜懐かしゲーム名人の小言">
+<meta property="og:description" content="あの頃のゲームの小ネタ・裏技を、名人が40秒で。毎日4話。">
+<meta property="og:url" content="https://ymaiworks-ctrl.github.io/meijin/soubi.html">
+<meta property="og:image" content="https://ymaiworks-ctrl.github.io/meijin/assets/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/meijin_dot.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b1033">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/rpg.css">
+</head>
+<body>
+<div class="pr">当サイトはアフィリエイト広告（楽天アフィリエイト等）を利用しています</div>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><img class="dot" src="assets/meijin_dot.png" alt="" width="56" height="56"><b>懐かしゲーム名人の小言<small>レトロゲームの小ネタ・裏技を40秒で</small></b></a>
+</div></header>
+
+<main class="wrap">
+  <div class="win msg" id="msg" tabindex="0" role="button"><span class="who">名人</span><p class="text" aria-live="polite">そうびを ととのえるのは 冒険の きほんじゃ。</p><span class="next" aria-hidden="true"></span></div>
+  <div id="groups"></div>
+  <p class="note">※名人は当チャンネルのキャラクターです。ここでは名人が選んだ道具を、特徴で紹介しています。価格・在庫・対応機種はリンク先でご確認ください。</p>
+  <nav class="win cmd" id="cmd"><span class="win-title">コマンド</span><ul>
+    <li><a href="./">もどる<small>トップへ</small></a></li>
+    <li><a href="review.html">こごと<small>辛口レビュー＆ランキング</small></a></li>
+  </ul></nav>
+</main>
+
+<footer><div class="wrap">
+  <p>運営：YM AI Works（雅 -miyabi-）</p>
+  <p>当サイトはアフィリエイト広告を利用しています。リンク先で商品を購入すると、運営者に報酬が支払われることがあります。</p>
+  <p>ゲーム・商品の名称は各権利者のものです。当サイトは非公式で、各権利者とは関係ありません。</p>
+</div></footer>
+
+<script src="assets/js/rpg.js"></script><script src="assets/js/aff.js"></script>
+<script>
+(async () => {
+  RPG.typewriter(document.getElementById("msg"), ["そうびを ととのえるのは 冒険の きほんじゃ。", "あの頃の ゲームを いま遊ぶなら、このへんが おすすめじゃ。"]);
+  RPG.commandMenu(document.getElementById("cmd"));
+  await AFF.load();
+  const { groups } = await RPG.json("data/soubi.json");
+  document.getElementById("groups").innerHTML = groups.map((g) => `<section class="win"><span class="win-title">${RPG.esc(g.slot)}：${RPG.esc(g.title)}</span>
+    ${g.items.map((it) => `<div class="eq"><h3>${RPG.esc(it.name)}</h3><p>${RPG.esc(it.why)}</p>${AFF.buttons(it.links)}</div>`).join("")}</section>`).join("");
+})();
+</script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
+</body>
+</html>
